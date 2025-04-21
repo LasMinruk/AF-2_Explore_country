@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 import { useFavorites } from "../contexts/FavoritesContext";
-import 'react-tooltip/dist/react-tooltip.css';
+import "react-tooltip/dist/react-tooltip.css";
 
 const Layout = ({ children }) => {
   const { favorites } = useFavorites();
@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
       {/* 🌍 Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          {/* Left: Logo/Heading */}
+          {/* 🌍 Logo/Title */}
           <Link to="/" className="flex items-center gap-2 group transition">
             <motion.span
-              className="text-3xl sm:text-4xl font-extrabold text-blue-600 group-hover:text-blue-700"
+              className="text-3xl sm:text-4xl font-extrabold text-blue-600 group-hover:text-blue-700 leading-none"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
               🌍
             </motion.span>
             <motion.span
-              className="text-2xl sm:text-3xl font-extrabold text-gray-800 group-hover:text-blue-600 tracking-wide"
+              className="text-2xl sm:text-3xl font-extrabold text-gray-800 group-hover:text-blue-600 tracking-wide leading-none"
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -44,10 +44,10 @@ const Layout = ({ children }) => {
             </motion.span>
           </Link>
 
-          {/* Right: Favorites button with tooltip */}
+          {/* 💖 Favorites Button */}
           <motion.button
             onClick={handleFavoritesClick}
-            className="relative bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium shadow transition duration-300"
+            className="relative flex items-center gap-2 bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium shadow transition duration-300"
             whileHover={{ scale: 1.05 }}
             data-tooltip-id="favorites-tooltip"
             data-tooltip-content="View your favorite countries 💖"
@@ -69,14 +69,15 @@ const Layout = ({ children }) => {
         </div>
       </header>
 
-      {/* 🧾 Main Content */}
+      {/* 📄 Main */}
       <main className="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 py-6">
         {children}
       </main>
 
       {/* 📜 Footer */}
       <footer className="text-center text-xs text-gray-400 py-4">
-        © {new Date().getFullYear()} Country Explorer. All rights reserved. Created by <span className="text-blue-500 font-medium">Lasiru Minruk</span>.
+        © {new Date().getFullYear()} <strong>Country Explorer</strong>. All rights reserved. Created by{" "}
+        <span className="text-blue-500 font-medium">Lasiru Minruk</span>.
       </footer>
     </div>
   );
