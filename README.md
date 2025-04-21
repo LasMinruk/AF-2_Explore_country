@@ -1,6 +1,51 @@
-# 🌍 Country Explorer — A modern React + Vite application that allows users to browse, filter, and explore countries from around the world using the REST Countries API. It includes features like favorites management, advanced filtering, smooth animations, and responsive design — built to impress and perform. ## 🚀 Features — 🌐 Display all countries with flag, capital, population, region • 🔍 Search by country name in real-time • 🌍 Filter countries by region (Asia, Europe, etc.) • 💖 Add or remove countries to/from favorites • 📌 Show only your favorite countries • 🔄 Responsive layout for all screen sizes • 🗺️ Country detail page with Google Maps link • ⏳ Loading spinners during fetch • 🔝 Auto scroll-to-top on navigation • 📦 Pagination system to improve performance • ⚠️ 404 Not Found page for invalid routes • ✨ Animations with Framer Motion • ✅ Built with React Context API ## 🛠️ Tech Stack — React.js + Vite + Tailwind CSS + Framer Motion + React Router + Axios + REST Countries API ## 📦 How to Run Locally — 1️⃣ Clone the repository: `git clone https://github.com/your-username/country-explorer.git && cd country-explorer` • 2️⃣ Install dependencies: `npm install` • 3️⃣ Start the dev server: `npm run dev` • 4️⃣ Visit `http://localhost:5173` in your browser ✅ ## 📜 Folder Structure — `src/components/` (CountryCard, Layout) • `src/pages/` (Home.jsx, CountryDetail.jsx, NotFound.jsx) • `src/contexts/` (FavoritesContext.jsx) • `src/App.jsx` • `main.jsx` ## 📸 Screenshots — (Insert screenshots of Home, Details, Favorites, 404 here if needed) ## 👨‍🎓 Author — Developed by **Lasiru Minruk** for **SE3040 – Application Frameworks**, SLIIT. ## 📜 License — Educational use only. © 2024 Lasiru Minruk. All rights reserved.
+# 🌍 Country Explorer
+
+**Country Explorer** is a modern, responsive React + Vite app that lets users explore countries around the globe using the [REST Countries API](https://restcountries.com/). Designed with animation, filtering, search, and favorites functionality — all with a smooth user experience.
 
 
+
+---
+
+## 🚀 Features
+
+✅ Browse all countries  
+🔍 Real-time search by country name  
+🌐 Filter by region (Africa, Asia, Americas, Europe, Oceania)  
+💖 Add/remove favorites with persistent storage  
+👀 Toggle to show only favorite countries  
+📱 Fully responsive layout  
+🗺 Country detail page with Google Maps link  
+🧭 Scrolls to top on navigation  
+⏳ Loading spinners during data fetch  
+🧩 Pagination (optional)  
+🚫 Custom 404 Not Found page  
+🎨 Built with Tailwind CSS & Framer Motion
+
+---
+
+## ⚙️ Tech Stack
+
+- 🧠 React + Vite
+- 💅 Tailwind CSS
+- 🎞 Framer Motion
+- 🧠 React Context API
+- 🌐 REST Countries API (v3.1)
+- 🔁 Axios
+
+---
+
+## 🔧 Setup Instructions
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/SE1020-IT2070-OOP-DSA-25/af-2-LasMinruk.git
+cd af-2-LasMinruk
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
 
 # React + Vite
 
